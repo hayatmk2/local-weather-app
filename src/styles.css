@@ -1,1 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+  background-color: #212426;
+  text-align: center;
+  font-family: Helvetica, Arial, sans-serif;
+  color: white;  
+}
+h1 {
+  font-size: 3rem;
+  letter-spacing: 0.9px;
+  background:linear-gradient(to left top, rgb(184, 178, 121), rgb(191, 142, 142));
+}
+h2 {
+  font-size: 2rem;
+}
+.mat-toolbar.mat-primary{
+  background:#3a616c;
+  color:rgb(240, 235, 235);
+}
+
+
+
+
+

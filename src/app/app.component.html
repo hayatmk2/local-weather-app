@@ -1,6 +1,19 @@
 <div style="text-align: center">
-  <h1>
-    My Weather app
-  </h1>
-<app-current-weather></app-current-weather>
+  <mat-toolbar color="primary" >
+    My Weather app</mat-toolbar>
+  <div>your city, your forecast, right now!</div>
+  <div style="width: 400px; margin: auto; padding: 10px">
+  <mat-card><app-city-search (searchEvent)="doSearch($event)"></app-city-search></mat-card>
+  </div>
+<div style="width: 400px; margin: auto; padding: 10px">
+  <mat-card>
+    <h2>
+      Current weather
+    </h2>
+    <app-current-weather [current]="currentWeather"></app-current-weather>
+  </mat-card>
+</div>  
+  <footer>
+    <small>Copyright © 2022 </small>
+  </footer>
 </div>

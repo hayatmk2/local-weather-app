@@ -1,4 +1,3 @@
-import { subscriptionLogsToBeFn } from "rxjs/internal/testing/TestScheduler"
 
 export interface ICurrentWeatherData {
   weather: [{

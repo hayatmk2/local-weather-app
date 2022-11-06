@@ -1,0 +1,11 @@
+<form>
+  <mat-form-field>
+    <mat-label>City or Zipcode</mat-label>
+    <mat-icon matPrefix>search</mat-icon>
+    <input matInput [formControl]="search" >
+    <mat-hint> specify country code like Renton, Us</mat-hint>
+    <mat-error *ngIf="search.invalid">
+      Type 3 or more characters to search
+    </mat-error>
+  </mat-form-field>
+</form>
